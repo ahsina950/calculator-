@@ -1,0 +1,34 @@
+def addition(num1,num2):
+ return(num1+num2) 
+def subtraction(num1,num2):
+  return(num1-num2)
+def multiplication(num1,num2):
+  return(num1*num2)
+def division(num1,num2):
+  return(num2/num1)
+print("hi welcome to my calculator!")
+print("please select a function from a,b,c,d")
+print("a for addition")
+print("b for subtraction")
+print("c for multiplication")
+print("d for division")
+while True:
+ fun = input("please select a function- ")
+ num1 = float(input("enter the first number- "))
+ num2 = float(input("enter the second number- "))
+ if fun in ('a','b','c','d','e'):
+   if fun =='a':
+           print(addition(num1,num2))   
+   elif fun == 'b':
+      
+        print(subtraction(num1,num2))
+   elif fun == 'c':
+                  print(multiplication(num1,num2))
+   elif fun == 'd':
+     print(division(num1,num2))
+
+   next = (input("Continue to another calculation'yes/no'?"))
+   if next == 'no':
+    break
+else:
+  print("invalid input") 
